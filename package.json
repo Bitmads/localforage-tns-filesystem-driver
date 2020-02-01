@@ -1,27 +1,22 @@
 {
-  "name": "localforage-webextensionstorage-driver",
-  "version": "1.2.1",
-  "description": "LocalForage storage driver for WebExtension storage APIs",
-  "main": "index.js",
-  "module": "src/index.js",
+  "name": "localforage-tns-filesystem-driver",
+  "version": "1.0.0",
+  "description": "LocalForage storage driver for NativeScript FileSystem storage APIs",
+  "main": "index.ts",
+  "module": "src/index.ts",
   "typings": "typings/localforage-webextensionstorage-driver.d.ts",
   "scripts": {
     "test": "jest --coverage",
     "build": "npm run babel; npm run browserify",
     "babel": "babel src --out-dir .",
-    "browserify": "browserify -e index.js -s webExtensionStorageDriver -o browser.js",
+    "browserify": "browserify -e index.ts -s webExtensionStorageDriver -o browser.js",
     "lint": "eslint src/",
     "prepublish": "npm test; npm run build"
   },
   "files": [
-    "driver.js",
-    "local.js",
-    "sync.js",
-    "utils.js",
-    "browser.js",
-    "typings/localforage-webextensionstorage-driver.d.ts"
+    "driver.ts"
   ],
-  "author": "Espen Henriksen",
+  "author": "Bitmads",
   "license": "MIT",
   "peerDependencies": {
     "localforage": "^1.1.0"
@@ -47,6 +42,7 @@
     ]
   },
   "dependencies": {
-    "babel-runtime": "^6.22.0"
+    "babel-runtime": "^6.22.0",
+    "nativescript": "^6.3.3"
   }
 }
