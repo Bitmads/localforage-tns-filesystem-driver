@@ -4,6 +4,7 @@
 This project adds a NativeScript FileSystem driver to localForage
 https://docs.nativescript.org/ns-framework-modules/file-system
 ## Usage
+Clone this report to somewhere and import the `src` folder for example:
 
 ```
       import * as localforage from 'localforage';
