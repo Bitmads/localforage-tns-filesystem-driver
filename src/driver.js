@@ -16,7 +16,7 @@ export default function createDriver(name, property) {
   const set = driver.set.bind(driver);
 
   return {
-    _driver: name,
+    _driver: 'tns-filesystem',
     _support: support,
     _initStorage() {
       return Promise.resolve();

@@ -3,8 +3,7 @@
  * pass with mocked browser and chrome objects
  */
 export function getStorage() {
-  return (window.browser && browser.storage)
-    || (window.chrome && chrome.storage);
+  return false;
 }
 
 /**
